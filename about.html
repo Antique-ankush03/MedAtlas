@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#286da4" />
+  <meta name="description" content="Meet the founder of MedAtlas and contact us." />
+  <title>About Us — MedAtlas</title>
+  <link rel="icon" type="image/svg+xml" href="assets/medatlas-favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
+  <script>try{if(localStorage.getItem('medatlas-theme')==='night')document.documentElement.dataset.theme='night'}catch(e){}</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="MedAtlas home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44"><path d="M20 2.5 36 8v12.4c0 10.1-6.2 17-16 21.1C10.2 37.4 4 30.5 4 20.4V8L20 2.5Z"/><path d="M20 12v16M12 20h16"/></svg></span><span class="brand-name">Med<span class="brand-light">Atlas</span><small>Find the right device for your health</small></span></a>
+    <nav aria-label="Main navigation"><a href="device-library.html">Explore devices</a><a href="index.html#areas">Therapy areas</a><a href="#contact">Contact Us</a><a href="about.html" aria-current="page">About Us</a></nav>
+    <div class="topbar-actions"><a class="about-home-link" href="index.html">← Back to MedAtlas</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to night theme" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Night mode</span></button></div>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> ABOUT US</div>
+      <h1>Making medical-device knowledge <em>easier to find.</em></h1>
+      <p>MedAtlas is being built to make the world of medical devices clearer and easier to explore—by health area, purpose, and the questions people bring to their care.</p>
+      <a class="about-primary" href="#founder">Meet the founder <span>↓</span></a>
+      <div class="about-hero-decoration" aria-hidden="true"><span class="about-shield"><svg viewBox="0 0 120 132"><path d="M60 5 108 22v37c0 30-19 51-48 66C31 110 12 89 12 59V22L60 5Z"/><path d="M60 37v48M36 61h48"/></svg></span><span class="about-spark">✳</span></div>
+    </section>
+
+    <section class="founder-section" id="founder">
+      <div class="founder-card"><img class="founder-photo" src="assets/founder-ankush-kumar.png" alt="Ankush Kumar, founder and developer of MedAtlas" /><div class="founder-caption"><span>FOUNDER &amp; DEVELOPER</span><b>Ankush Kumar</b></div></div>
+      <div class="founder-copy"><div class="eyebrow">THE PERSON BEHIND MEDATLAS</div><h2>Meet Ankush Kumar</h2><p>I am Ankush Kumar, founder and developer of MedAtlas. I hold a postgraduate MBA in Pharmaceutical Management and an undergraduate degree in Pharmacy (B.Pharm).</p><p>I have over four years of experience working in the pharmaceutical and medical-device industry. MedAtlas brings together my interest in healthcare technology and my belief that clear, approachable information can help people better understand the devices used in care.</p><div class="founder-credentials"><span><b>MBA</b><small>Pharmaceutical Management</small></span><i></i><span><b>B.Pharm</b><small>Pharmacy</small></span><i></i><span><b>4+ years</b><small>Industry experience</small></span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-intro"><div class="eyebrow">CONTACT US</div><h2>We’d like to hear from you.</h2><p>Have a question, suggestion, or idea for the MedAtlas library? Share a few details and a message.</p><div class="contact-note"><span>✉</span><p>Messages go to durdentyler168@gmail.com through FormSubmit. FormSubmit’s spam checks and CAPTCHA are enabled; first-time delivery needs inbox activation. Please don’t include medical records or other sensitive health information.</p></div></div>
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/durdentyler168@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New MedAtlas contact form submission" />
+        <input type="hidden" name="_template" value="table" />
+        <div class="form-honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label></div>
+        <div class="form-grid">
+          <label>Full name <span>*</span><input name="name" type="text" autocomplete="name" placeholder="Your name" required /></label>
+          <label>Age <span>*</span><input name="age" type="number" min="1" max="120" inputmode="numeric" placeholder="Your age" required /></label>
+          <label>Sex <span>*</span><select name="sex" required><option value="" selected disabled>Select an option</option><option>Female</option><option>Male</option><option>Intersex</option><option>Prefer not to say</option><option>Self-describe</option></select></label>
+          <label>Nationality <span>*</span><input name="nationality" type="text" autocomplete="country-name" placeholder="Your nationality" required /></label>
+          <label class="form-span">Email address <span>*</span><input name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@gmail.com" pattern="^[A-Za-z0-9._%+-]+@gmail\.com$" title="Please enter a Gmail address ending in @gmail.com" required /><small>Use a Gmail address ending in @gmail.com.</small></label>
+          <label class="form-span">Phone number <span>*</span><input name="phone" type="tel" autocomplete="tel" placeholder="Include country code if possible" required /></label>
+          <label class="form-span">Message <span>*</span><textarea name="message" rows="4" placeholder="How can we help?" required></textarea></label>
+        </div>
+        <button class="contact-submit" type="submit">Submit message <span>→</span></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <p class="about-disclaimer">MedAtlas provides educational information and is not a substitute for professional medical advice.</p>
+  </main>
+
+  <footer><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44"><path d="M20 2.5 36 8v12.4c0 10.1-6.2 17-16 21.1C10.2 37.4 4 30.5 4 20.4V8L20 2.5Z"/><path d="M20 12v16M12 20h16"/></svg></span><span class="brand-name">Med<span class="brand-light">Atlas</span><small>Find the right device for your health</small></span></a><span>Medical device knowledge, mapped.</span><span>© 2026 MedAtlas · Educational use</span></footer>
+  <script src="about.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

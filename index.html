@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#286da4" />
+  <meta name="description" content="Explore medical devices by health area, what they do, and how they are used." />
+  <title>MedAtlas — Find your way through medical devices</title>
+  <link rel="icon" type="image/svg+xml" href="assets/medatlas-favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>try{if(localStorage.getItem('medatlas-theme')==='night')document.documentElement.dataset.theme='night'}catch(e){}</script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-pulse"></span> A clearer way to explore medical devices <a href="device-library.html">Explore the library <span>→</span></a></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="MedAtlas home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44" role="img"><path d="M20 2.5 36 8v12.4c0 10.1-6.2 17-16 21.1C10.2 37.4 4 30.5 4 20.4V8L20 2.5Z"/><path d="M20 12v16M12 20h16"/></svg></span><span class="brand-name">Med<span class="brand-light">Atlas</span><small>Find the right device for your health</small></span></a>
+    <nav aria-label="Main navigation"><a href="device-library.html">Device library</a><a href="#areas">Health areas</a><a href="#how-it-works">How MedAtlas works</a><a href="about.html">About Us</a></nav>
+    <div class="topbar-actions"><a class="text-button library-nav-link" href="device-library.html">Browse devices <span>→</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to night theme" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Night mode</span></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> MEDICAL DEVICE KNOWLEDGE, MADE CLEAR</div>
+        <h1>Find your way to the<br />devices behind <em>better care.</em></h1>
+        <p class="hero-sub">A health concern can lead to a lot of unfamiliar device names. MedAtlas helps you explore the tools used across care, understand what they do, and see where to learn more.</p>
+        <form class="search-box" id="searchForm" role="search"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="Try “blood sugar”, “breathing”, or a device name" autocomplete="off" /><button type="submit">Search <span>→</span></button></form>
+        <div class="popular"><span>POPULAR:</span><button data-query="blood glucose">Blood glucose</button><button data-query="blood pressure">Blood pressure</button><button data-query="breathing">Breathing support</button></div>
+        <div class="hero-actions"><a class="primary-link" href="#areas">Browse health areas <span>→</span></a><a class="secondary-link" href="device-library.html">View all devices <span>↗</span></a></div>
+      </div>
+      <div class="hero-art hero-doctor-art">
+        <img class="doctor-hero-image" src="assets/medatlas-doctor-hero.png" alt="A doctor presenting a range of medical devices, including an MRI scanner, wheelchair, ultrasound system, glucose meter, and inhaler" fetchpriority="high" />
+      </div>
+      <div class="hero-note"><span>✳</span> Get familiar with the options. Bring questions to your care team.</div>
+    </section>
+
+    <section class="trust-strip" aria-label="About the MedAtlas library"><div><strong id="areaCount">15</strong><span>health areas</span></div><i></i><div><strong id="deviceCount">30+</strong><span>device guides</span></div><i></i><div><strong>Plain language</strong><span>for curious minds</span></div><p>Educational · Evidence-aware · Brand-neutral</p></section>
+
+    <section class="pathways" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow">ONE LIBRARY, A FEW WAYS IN</div><h2>Start wherever your question begins.</h2><p>Move from a health area or a familiar concern to a plain-language introduction to the devices used in care.</p></div></div>
+      <div class="pathway-grid">
+        <a class="pathway-card pathway-area" href="#areas"><span class="pathway-number">01 / BROWSE</span><span class="pathway-icon">⌖</span><h3>Explore by health area</h3><p>See devices connected with areas such as heart health, breathing, diabetes, mobility, and more.</p><span class="pathway-link">Choose an area <b>↗</b></span></a>
+        <a class="pathway-card pathway-search" href="#top"><span class="pathway-number">02 / SEARCH</span><span class="pathway-icon">⌕</span><h3>Search a concern or device</h3><p>Try a common phrase, a condition-related term, or a device name to find a useful starting point.</p><span class="pathway-link">Search the library <b>↗</b></span></a>
+        <a class="pathway-card pathway-guide" href="device-library.html"><span class="pathway-number">03 / UNDERSTAND</span><span class="pathway-icon">＋</span><h3>Get to know the device</h3><p>Read what it does, how it is generally used, where the technology comes from, and example brands.</p><span class="pathway-link">Open the device library <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="areas-section" id="areas">
+      <div class="section-heading"><div><div class="eyebrow">START WITH A HEALTH AREA</div><h2>What brings you here?</h2><p>Choose an area to open its own device library, with guides for devices used in screening, monitoring, diagnosis, or care.</p></div><a href="device-library.html" class="inline-link">Browse all devices <span>→</span></a></div>
+      <div class="area-grid" id="areaGrid"></div>
+    </section>
+
+    <section class="principles" id="education-note"><div class="principle-intro"><div class="eyebrow">KNOWLEDGE WITH CARE</div><h2>Useful context.<br /><em>Clear boundaries.</em></h2><p>Medical devices can support screening, diagnosis, monitoring, and treatment. MedAtlas makes their basics easier to explore while keeping the role of your care team clear.</p><a href="about.html" class="inline-link">About MedAtlas <span>→</span></a></div><div class="principle-list"><article><span>01</span><div><h3>Plain language before jargon</h3><p>Understand the purpose and basic use of a device without needing to know the technical terms first.</p></div></article><article><span>02</span><div><h3>Examples, not endorsements</h3><p>Brand names are illustrative. Availability, indications, and regulatory status can differ by model and country.</p></div></article><article><span>03</span><div><h3>Information to support a conversation</h3><p>MedAtlas is educational, not a diagnostic tool or substitute for medical advice. Follow device instructions and guidance from a qualified professional.</p></div></article></div></section>
+    <section class="sources" id="sources"><span>Built from public nomenclature and clinical reference materials</span><a href="https://www.who.int/health-topics/medical-devices" target="_blank" rel="noreferrer">WHO medical devices</a><a href="https://www.fda.gov/medical-devices/classify-your-medical-device/product-code-classification-database" target="_blank" rel="noreferrer">FDA product classification</a><a href="https://health.ec.europa.eu/medical-devices-topics-interest/european-medical-devices-nomenclature-emdn_en" target="_blank" rel="noreferrer">European Commission EMDN</a><span>Therapy-area images are AI-generated; device photos link to their source in each guide.</span><span>Book reference: <i>Medical Devices for Pharmacy and Other Healthcare Professions</i> (2021)</span></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44"><path d="M20 2.5 36 8v12.4c0 10.1-6.2 17-16 21.1C10.2 37.4 4 30.5 4 20.4V8L20 2.5Z"/><path d="M20 12v16M12 20h16"/></svg></span><span class="brand-name">Med<span class="brand-light">Atlas</span><small>Find the right device for your health</small></span></a><span>Medical device knowledge, mapped.</span><span>© 2026 MedAtlas · Educational use</span></footer>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="device-modal" id="deviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+  <script src="app.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
