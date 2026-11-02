@@ -25,4 +25,10 @@
     applyTheme(next);
     try { localStorage.setItem(storageKey, next); } catch (error) { /* Theme still works for this page. */ }
   }));
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
 })();

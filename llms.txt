@@ -1,0 +1,127 @@
+﻿# MedAtlas
+> Plain-language educational directory and guide to 100+ medical devices across 15 health areas, founded by Ankush Kumar (MBA Pharmaceutical Management, B.Pharm).
+
+## Educational Mission & Disclaimers
+- MedAtlas is for general patient and student education; it is not a diagnostic tool or substitute for professional medical advice.
+- Device specifications, regulatory status, indications, and local availability vary by country and model.
+- Built in alignment with public nomenclature and reference materials from WHO Medical Devices, US FDA Product Code Classification, and the European Medical Device Nomenclature (EMDN).
+
+## Health Areas
+- [Heart & circulation](https://medatlas.health/device-library.html?area=Heart%20%26%20circulation): Medical devices used in screening, monitoring, diagnosis, and care for Heart & circulation.
+- [Diabetes & endocrine](https://medatlas.health/device-library.html?area=Diabetes%20%26%20endocrine): Medical devices used in screening, monitoring, diagnosis, and care for Diabetes & endocrine.
+- [Breathing & sleep](https://medatlas.health/device-library.html?area=Breathing%20%26%20sleep): Medical devices used in screening, monitoring, diagnosis, and care for Breathing & sleep.
+- [Neurology & mental health](https://medatlas.health/device-library.html?area=Neurology%20%26%20mental%20health): Medical devices used in screening, monitoring, diagnosis, and care for Neurology & mental health.
+- [Bones, joints & mobility](https://medatlas.health/device-library.html?area=Bones%2C%20joints%20%26%20mobility): Medical devices used in screening, monitoring, diagnosis, and care for Bones, joints & mobility.
+- [Digestive & liver](https://medatlas.health/device-library.html?area=Digestive%20%26%20liver): Medical devices used in screening, monitoring, diagnosis, and care for Digestive & liver.
+- [Kidney & urinary](https://medatlas.health/device-library.html?area=Kidney%20%26%20urinary): Medical devices used in screening, monitoring, diagnosis, and care for Kidney & urinary.
+- [Cancer care](https://medatlas.health/device-library.html?area=Cancer%20care): Medical devices used in screening, monitoring, diagnosis, and care for Cancer care.
+- [Surgery & wound care](https://medatlas.health/device-library.html?area=Surgery%20%26%20wound%20care): Medical devices used in screening, monitoring, diagnosis, and care for Surgery & wound care.
+- [Infection & testing](https://medatlas.health/device-library.html?area=Infection%20%26%20testing): Medical devices used in screening, monitoring, diagnosis, and care for Infection & testing.
+- [Eyes, ears & dental](https://medatlas.health/device-library.html?area=Eyes%2C%20ears%20%26%20dental): Medical devices used in screening, monitoring, diagnosis, and care for Eyes, ears & dental.
+- [Children & maternity](https://medatlas.health/device-library.html?area=Children%20%26%20maternity): Medical devices used in screening, monitoring, diagnosis, and care for Children & maternity.
+- [Rehabilitation & assistive](https://medatlas.health/device-library.html?area=Rehabilitation%20%26%20assistive): Medical devices used in screening, monitoring, diagnosis, and care for Rehabilitation & assistive.
+- [Self-care & monitoring](https://medatlas.health/device-library.html?area=Self-care%20%26%20monitoring): Medical devices used in screening, monitoring, diagnosis, and care for Self-care & monitoring.
+- [Hospital & pharmacy](https://medatlas.health/device-library.html?area=Hospital%20%26%20pharmacy): Medical devices used in screening, monitoring, diagnosis, and care for Hospital & pharmacy.
+
+## Medical Device Catalog (100 Guides)
+- [](https://medatlas.health/device-library.html?device=glucometer) (): 
+- [](https://medatlas.health/device-library.html?device=cgm) (): 
+- [](https://medatlas.health/device-library.html?device=bp-monitor) (): 
+- [](https://medatlas.health/device-library.html?device=pulse-ox) (): 
+- [](https://medatlas.health/device-library.html?device=cpap) (): 
+- [](https://medatlas.health/device-library.html?device=thermometer) (): 
+- [](https://medatlas.health/device-library.html?device=stethoscope) (): 
+- [](https://medatlas.health/device-library.html?device=ecg) (): 
+- [](https://medatlas.health/device-library.html?device=holter) (): 
+- [](https://medatlas.health/device-library.html?device=pacemaker) (): 
+- [](https://medatlas.health/device-library.html?device=aed) (): 
+- [](https://medatlas.health/device-library.html?device=insulin-pump) (): 
+- [](https://medatlas.health/device-library.html?device=inhaler-spacer) (): 
+- [](https://medatlas.health/device-library.html?device=nebulizer) (): 
+- [](https://medatlas.health/device-library.html?device=hearing-aid) (): 
+- [](https://medatlas.health/device-library.html?device=wheelchair) (): 
+- [](https://medatlas.health/device-library.html?device=prosthesis) (): 
+- [](https://medatlas.health/device-library.html?device=knee-implant) (): 
+- [](https://medatlas.health/device-library.html?device=dialysis) (): 
+- [](https://medatlas.health/device-library.html?device=urinary-catheter) (): 
+- [](https://medatlas.health/device-library.html?device=endoscope) (): 
+- [](https://medatlas.health/device-library.html?device=syringe) (): 
+- [](https://medatlas.health/device-library.html?device=iv-pump) (): 
+- [](https://medatlas.health/device-library.html?device=xray) (): 
+- [](https://medatlas.health/device-library.html?device=ultrasound) (): 
+- [](https://medatlas.health/device-library.html?device=mri) (): 
+- [](https://medatlas.health/device-library.html?device=neurostim) (): 
+- [](https://medatlas.health/device-library.html?device=wound-dressing) (): 
+- [](https://medatlas.health/device-library.html?device=pregnancy-test) (): 
+- [](https://medatlas.health/device-library.html?device=ivd-analyzer) (): 
+- [](https://medatlas.health/device-library.html?device=colonoscope) (): 
+- [](https://medatlas.health/device-library.html?device=hemodialysis-access) (): 
+- [](https://medatlas.health/device-library.html?device=surgical-robot) (): 
+- [](https://medatlas.health/device-library.html?device=mammography) (): 
+- [](https://medatlas.health/device-library.html?device=bone-densitometer) (): 
+- [](https://medatlas.health/device-library.html?device=nebulizer-spacer) (): 
+- [](https://medatlas.health/device-library.html?device=neuro-wheel) (): 
+- [](https://medatlas.health/device-library.html?device=ct-scanner) (): 
+- [](https://medatlas.health/device-library.html?device=dental-opg) (): 
+- [](https://medatlas.health/device-library.html?device=echocardiography) (): 
+- [](https://medatlas.health/device-library.html?device=eeg) (): 
+- [](https://medatlas.health/device-library.html?device=emg-ncv) (): 
+- [](https://medatlas.health/device-library.html?device=audiometer) (): 
+- [](https://medatlas.health/device-library.html?device=otoscope) (): 
+- [](https://medatlas.health/device-library.html?device=ophthalmoscope) (): 
+- [](https://medatlas.health/device-library.html?device=fetal-doppler) (): 
+- [](https://medatlas.health/device-library.html?device=fetal-monitor) (): 
+- [](https://medatlas.health/device-library.html?device=spirometer) (): 
+- [](https://medatlas.health/device-library.html?device=cardiac-stress-test) (): 
+- [](https://medatlas.health/device-library.html?device=uroflowmeter) (): 
+- [](https://medatlas.health/device-library.html?device=body-composition-monitor) (): 
+- [](https://medatlas.health/device-library.html?device=colposcope) (): 
+- [](https://medatlas.health/device-library.html?device=anesthesia-workstation) (): 
+- [](https://medatlas.health/device-library.html?device=ventilator) (): 
+- [](https://medatlas.health/device-library.html?device=oxygen-concentrator) (): 
+- [](https://medatlas.health/device-library.html?device=suction-machine) (): 
+- [](https://medatlas.health/device-library.html?device=electrosurgical-unit) (): 
+- [](https://medatlas.health/device-library.html?device=syringe-pump) (): 
+- [](https://medatlas.health/device-library.html?device=heart-lung-machine) (): 
+- [](https://medatlas.health/device-library.html?device=iabp) (): 
+- [](https://medatlas.health/device-library.html?device=laryngoscope) (): 
+- [](https://medatlas.health/device-library.html?device=operating-microscope) (): 
+- [](https://medatlas.health/device-library.html?device=surgical-light) (): 
+- [](https://medatlas.health/device-library.html?device=laparoscopic-system) (): 
+- [](https://medatlas.health/device-library.html?device=autoclave) (): 
+- [](https://medatlas.health/device-library.html?device=centrifuge) (): 
+- [](https://medatlas.health/device-library.html?device=hematology-analyzer) (): 
+- [](https://medatlas.health/device-library.html?device=microtome) (): 
+- [](https://medatlas.health/device-library.html?device=radiant-warmer) (): 
+- [](https://medatlas.health/device-library.html?device=neonatal-incubator) (): 
+- [](https://medatlas.health/device-library.html?device=neonatal-phototherapy) (): 
+- [](https://medatlas.health/device-library.html?device=tens-unit) (): 
+- [](https://medatlas.health/device-library.html?device=therapeutic-ultrasound) (): 
+- [](https://medatlas.health/device-library.html?device=diathermy-unit) (): 
+- [](https://medatlas.health/device-library.html?device=traction-system) (): 
+- [](https://medatlas.health/device-library.html?device=pneumatic-compression) (): 
+- [](https://medatlas.health/device-library.html?device=patient-lift) (): 
+- [](https://medatlas.health/device-library.html?device=walker) (): 
+- [](https://medatlas.health/device-library.html?device=hospital-bed) (): 
+- [](https://medatlas.health/device-library.html?device=stretcher) (): 
+- [](https://medatlas.health/device-library.html?device=dental-chair) (): 
+- [](https://medatlas.health/device-library.html?device=dental-handpiece) (): 
+- [](https://medatlas.health/device-library.html?device=dental-implant) (): 
+- [](https://medatlas.health/device-library.html?device=prosthetic-heart-valve) (): 
+- [](https://medatlas.health/device-library.html?device=vascular-stent) (): 
+- [](https://medatlas.health/device-library.html?device=angioplasty-balloon) (): 
+- [](https://medatlas.health/device-library.html?device=breast-pump) (): 
+- [](https://medatlas.health/device-library.html?device=slit-lamp) (): 
+- [](https://medatlas.health/device-library.html?device=medical-gas-system) (): 
+- [](https://medatlas.health/device-library.html?device=blood-bank-refrigerator) (): 
+- [](https://medatlas.health/device-library.html?device=heater-cooler) (): 
+- [](https://medatlas.health/device-library.html?device=cathlab-system) (): 
+- [](https://medatlas.health/device-library.html?device=surgical-table) (): 
+- [](https://medatlas.health/device-library.html?device=c-arm) (): 
+- [](https://medatlas.health/device-library.html?device=dialyzer) (): 
+- [](https://medatlas.health/device-library.html?device=blood-gas-analyzer) (): 
+- [](https://medatlas.health/device-library.html?device=electrolyte-analyzer) (): 
+- [](https://medatlas.health/device-library.html?device=patient-monitor) (): 
+- [](https://medatlas.health/device-library.html?device=orthosis-brace) (): 
+- [](https://medatlas.health/device-library.html?device=exam-couch) (): 
+

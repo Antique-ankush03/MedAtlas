@@ -569,7 +569,58 @@ function showComparison(){
   const panel=document.getElementById('comparePanel');panel.innerHTML=`<div class="compare-panel-heading"><div><span>YOUR SIDE-BY-SIDE VIEW</span><h3>Compare ${chosen.length} products</h3></div><button type="button" id="clearCompare">Clear selection</button></div><div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Compare</th>${chosen.map(item=>`<th>${item.brand}<small>${item.name}</small></th>`).join('')}</tr></thead><tbody><tr><th>Price / MRP</th>${chosen.map(item=>`<td><b>${item.price}</b><small>${item.mrp}</small></td>`).join('')}</tr><tr><th>Availability</th>${chosen.map(item=>`<td>${item.availability}</td>`).join('')}</tr><tr><th>Package / configuration</th>${chosen.map(item=>`<td>${item.package}</td>`).join('')}</tr><tr><th>Key comparison point</th>${chosen.map(item=>`<td><b>${item.differentiator||item.features[0]}</b></td>`).join('')}</tr><tr><th>Features</th>${chosen.map(item=>`<td><ul>${item.features.map(feature=>`<li>${feature}</li>`).join('')}</ul></td>`).join('')}</tr><tr><th>Price note</th>${chosen.map(item=>`<td>${item.priceNote}</td>`).join('')}</tr><tr><th>Product source</th>${chosen.map(item=>`<td><a href="${item.listing}" target="_blank" rel="noreferrer">${item.seller} ↗</a></td>`).join('')}</tr></tbody></table></div>`;
   panel.hidden=false;panel.scrollIntoView({behavior:'smooth',block:'nearest'});document.getElementById('clearCompare').onclick=()=>{selectedCompare.clear();document.querySelectorAll('.compare-check').forEach(input=>input.checked=false);panel.hidden=true;updateCompareTray()};
 }
-function openDevice(id){
+function updateDeviceSchema(d){
+  let script=document.getElementById('active-device-schema');
+  if(!script){
+    script=document.createElement('script');
+    script.id='active-device-schema';
+    script.type='application/ld+json';
+    document.head.appendChild(script);
+  }
+  const item=howToResources[d.id];
+  const schema={
+    "@context":"https://schema.org",
+    "@type":"MedicalDevice",
+    "@id":"https://medatlas.health/device-library.html?device="+encodeURIComponent(d.id),
+    "name":d.name,
+    "description":d.what,
+    "category":d.area,
+    "purpose":d.short,
+    "procedure":d.use,
+    "relevantSpecialty":d.area,
+    "manufacturer":(d.brands||[]).map(b=>({"@type":"Organization","name":b})),
+    "contraindication":"Follow manufacturer labeling and care-team instructions for model-specific contraindications."
+  };
+  if(item){
+    schema.subjectOf={
+      "@type":"HowTo",
+      "name":item.title,
+      "description":item.note,
+      "step":(item.steps||[]).map((step,idx)=>({
+        "@type":"HowToStep",
+        "position":idx+1,
+        "text":step
+      }))
+    };
+  }
+  script.textContent=JSON.stringify(schema,null,2);
+}
+function removeDeviceSchema(){
+  const script=document.getElementById('active-device-schema');
+  if(script)script.remove();
+}
+function closeDeviceModal(updateHistory=true){
+  const modal=document.getElementById('modalBackdrop');
+  if(modal)modal.hidden=true;
+  document.body.style.overflow='';
+  removeDeviceSchema();
+  if(updateHistory&&window.history&&history.pushState){
+    const base=location.pathname+(selectedArea!=='All areas'?'?area='+encodeURIComponent(selectedArea):(query?'?q='+encodeURIComponent(query):''));
+    history.pushState(null,'',base);
+  }
+  document.title=selectedArea!=='All areas'?selectedArea+' Devices — MedAtlas':'Medical Device Library & Comparison Guides — MedAtlas';
+}
+function openDevice(id,updateHistory=true){
   const d=devices.find(x=>x.id===id);if(!d)return;
   selectedCompare.clear();compareDeviceId=id;
   const photo=devicePhotos[d.id],gallery=brandProductGalleries[d.id]||(photo?[{name:photo.label,brand:'Representative product image',src:photo.src,source:photo.source}]:[]);
@@ -595,14 +646,39 @@ function openDevice(id){
   document.querySelectorAll('.image-zoom-trigger').forEach(button=>button.onclick=()=>openImageViewer(button.dataset.image,button.dataset.caption,button.dataset.source));
   document.querySelectorAll('.compare-check').forEach(input=>input.onchange=()=>{input.checked?selectedCompare.add(input.value):selectedCompare.delete(input.value);updateCompareTray()});
   const compareNow=document.getElementById('compareNow');if(compareNow)compareNow.onclick=showComparison;
-  document.getElementById('modalBackdrop').hidden=false;document.body.style.overflow='hidden';document.getElementById('modalClose').focus()
+  document.getElementById('modalBackdrop').hidden=false;document.body.style.overflow='hidden';document.getElementById('modalClose').focus();
+  document.title=`${d.name} Guide — MedAtlas`;
+  updateDeviceSchema(d);
+  if(updateHistory&&window.history&&history.pushState){
+    history.pushState({deviceId:d.id},'',`?device=${encodeURIComponent(d.id)}`);
+  }
 }
 function openImageViewer(src,caption,source){
   if(!src)return;const viewer=document.getElementById('imageViewer'),image=document.getElementById('imageViewerImg'),zoomCaption=document.getElementById('imageViewerCaption'),sourceLink=document.getElementById('imageViewerSource');
   viewer.hidden=false;image.src=src;image.alt=caption;image.style.transform='scale(1)';image.dataset.zoom='1';zoomCaption.textContent=caption;sourceLink.href=source||'#';sourceLink.hidden=!source;document.getElementById('zoomValue').textContent='100%';document.getElementById('imageViewerClose').focus()
 }
 if(grid){
-  document.getElementById('modalClose').onclick=()=>{document.getElementById('modalBackdrop').hidden=true;document.body.style.overflow=''};document.getElementById('modalBackdrop').onclick=e=>{if(e.target.id==='modalBackdrop'){e.currentTarget.hidden=true;document.body.style.overflow=''}};document.getElementById('imageViewerClose').onclick=()=>document.getElementById('imageViewer').hidden=true;document.getElementById('imageViewer').onclick=e=>{if(e.target.id==='imageViewer')e.currentTarget.hidden=true};const adjustZoom=delta=>{const image=document.getElementById('imageViewerImg'),value=Math.max(1,Math.min(3,Number(image.dataset.zoom||1)+delta));image.dataset.zoom=String(value);image.style.transform=`scale(${value})`;document.getElementById('zoomValue').textContent=`${Math.round(value*100)}%`};document.getElementById('zoomIn').onclick=()=>adjustZoom(.25);document.getElementById('zoomOut').onclick=()=>adjustZoom(-.25);document.getElementById('zoomReset').onclick=()=>{const image=document.getElementById('imageViewerImg');image.dataset.zoom='1';image.style.transform='scale(1)';document.getElementById('zoomValue').textContent='100%'};document.getElementById('modalBackdrop').onclick=e=>{if(e.target.id==='modalBackdrop'){e.currentTarget.hidden=true;document.body.style.overflow=''}};document.addEventListener('keydown',e=>{if(e.key==='Escape'){const viewer=document.getElementById('imageViewer');if(!viewer.hidden)viewer.hidden=true;else{document.getElementById('modalBackdrop').hidden=true;document.body.style.overflow=''}}});document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();query=input.value.trim();savedMode=false;render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})};input.oninput=()=>{if(!input.value){query='';render()}};document.querySelectorAll('.popular button').forEach(b=>b.onclick=()=>{input.value=b.dataset.query;query=b.dataset.query;savedMode=false;render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})});document.getElementById('sortSelect').onchange=e=>{sort=e.target.value;render()};document.querySelectorAll('.view-toggle').forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll('.view-toggle').forEach(x=>x.classList.toggle('active',x===b));render()});document.getElementById('savedToggle').onclick=()=>{savedMode=!savedMode;selectedArea='All areas';query='';input.value='';render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})};document.getElementById('clearFilters').onclick=()=>{query='';input.value='';selectedArea='All areas';selectedFilter='All devices';savedMode=false;render()};document.getElementById('resetSearch').onclick=()=>document.getElementById('clearFilters').click();render();
+  document.getElementById('modalClose').onclick=()=>closeDeviceModal();
+  document.getElementById('modalBackdrop').onclick=e=>{if(e.target.id==='modalBackdrop')closeDeviceModal()};
+  document.getElementById('imageViewerClose').onclick=()=>document.getElementById('imageViewer').hidden=true;
+  document.getElementById('imageViewer').onclick=e=>{if(e.target.id==='imageViewer')e.currentTarget.hidden=true};
+  const adjustZoom=delta=>{const image=document.getElementById('imageViewerImg'),value=Math.max(1,Math.min(3,Number(image.dataset.zoom||1)+delta));image.dataset.zoom=String(value);image.style.transform=`scale(${value})`;document.getElementById('zoomValue').textContent=`${Math.round(value*100)}%`};
+  document.getElementById('zoomIn').onclick=()=>adjustZoom(.25);
+  document.getElementById('zoomOut').onclick=()=>adjustZoom(-.25);
+  document.getElementById('zoomReset').onclick=()=>{const image=document.getElementById('imageViewerImg');image.dataset.zoom='1';image.style.transform='scale(1)';document.getElementById('zoomValue').textContent='100%'};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const viewer=document.getElementById('imageViewer');if(!viewer.hidden)viewer.hidden=true;else closeDeviceModal()}});
+  window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);const devId=p.get('device');if(devId)openDevice(devId,false);else closeDeviceModal(false)});
+  document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();query=input.value.trim();savedMode=false;render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})};
+  input.oninput=()=>{if(!input.value){query='';render()}};
+  document.querySelectorAll('.popular button').forEach(b=>b.onclick=()=>{input.value=b.dataset.query;query=b.dataset.query;savedMode=false;render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})});
+  document.getElementById('sortSelect').onchange=e=>{sort=e.target.value;render()};
+  document.querySelectorAll('.view-toggle').forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll('.view-toggle').forEach(x=>x.classList.toggle('active',x===b));render()});
+  document.getElementById('savedToggle').onclick=()=>{savedMode=!savedMode;selectedArea='All areas';query='';input.value='';render();document.getElementById('explore').scrollIntoView({behavior:'smooth'})};
+  document.getElementById('clearFilters').onclick=()=>{query='';input.value='';selectedArea='All areas';selectedFilter='All devices';savedMode=false;render()};
+  document.getElementById('resetSearch').onclick=()=>document.getElementById('clearFilters').click();
+  render();
+  const initDevice=pageParams.get('device');
+  if(initDevice)openDevice(initDevice,false);
 }else{
   renderAreas();const areaCount=document.getElementById('areaCount'),deviceCount=document.getElementById('deviceCount');if(areaCount)areaCount.textContent=areas.length-1;if(deviceCount)deviceCount.textContent=devices.length;
   if(document.getElementById('searchForm'))document.getElementById('searchForm').onsubmit=e=>{e.preventDefault();const value=document.getElementById('searchInput').value.trim();location.href=`device-library.html?q=${encodeURIComponent(value)}`};

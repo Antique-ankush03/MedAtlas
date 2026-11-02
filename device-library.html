@@ -1,17 +1,92 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#286da4" />
-  <meta name="description" content="Explore plain-language medical device guides by health area." />
-  <title>Device Library — MedAtlas</title>
+  <title>Medical Device Library &amp; Comparison Guides — MedAtlas</title>
+  <meta name="description" content="Search and compare 100+ medical devices across 15 health areas. Plain-language educational guides covering what devices do, general use steps, brand examples, and India price status." />
+  <meta name="keywords" content="medical device catalog, medical equipment comparison, glucose meters, blood pressure monitors, CPAP, pulse oximeter, hospital equipment, healthcare technology" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://medatlas.health/device-library.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://medatlas.health/device-library.html" />
+  <meta property="og:site_name" content="MedAtlas" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Medical Device Library &amp; Comparison Guides — MedAtlas" />
+  <meta property="og:description" content="Search and compare 100+ medical devices across 15 health areas. Plain-language educational guides with brand examples and general use steps." />
+  <meta property="og:image" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+  <meta property="og:image:secure_url" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+  <meta property="og:image:width" content="1731" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:image:alt" content="MedAtlas medical device directory illustration" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://medatlas.health/device-library.html" />
+  <meta name="twitter:title" content="Medical Device Library &amp; Comparison Guides — MedAtlas" />
+  <meta name="twitter:description" content="Search and compare 100+ medical devices across 15 health areas. Plain-language educational guides with brand examples and general use steps." />
+  <meta name="twitter:image" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+
+  <!-- Favicon & Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/medatlas-favicon.svg" />
+
+  <!-- Preconnect & Non-blocking Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" /></noscript>
+
   <link rel="stylesheet" href="styles.css" />
   <script>try{if(localStorage.getItem('medatlas-theme')==='night')document.documentElement.dataset.theme='night'}catch(e){}</script>
+
+  <!-- Schema.org JSON-LD CollectionPage & ItemList for Search Engines and AIs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://medatlas.health/device-library.html#webpage",
+        "url": "https://medatlas.health/device-library.html",
+        "name": "Medical Device Library & Comparison Guides — MedAtlas",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://medatlas.health/#website",
+          "url": "https://medatlas.health/",
+          "name": "MedAtlas"
+        },
+        "description": "Explore 100+ medical devices across 15 health areas with plain-language overviews, general use steps, brand examples, and India price status.",
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "educationalUse": "Patient Education"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://medatlas.health/device-library.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://medatlas.health/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Device Library",
+            "item": "https://medatlas.health/device-library.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="announcement"><span class="announcement-pulse"></span> Clear, practical knowledge about medical devices <a href="index.html#areas">Explore health areas <span>→</span></a></div>
@@ -35,6 +110,516 @@
       <div class="catalog-heading"><div><div class="eyebrow">PLAIN-LANGUAGE DEVICE GUIDES</div><h2>Browse the devices</h2><p>Open a guide to learn what a device does, how it is generally used, and more.</p></div><div class="catalog-tools"><label class="filter-wrap"><span>⌄</span><select id="sortSelect" aria-label="Sort devices"><option value="featured">Featured</option><option value="az">A to Z</option></select></label><button class="view-toggle active" data-view="grid" aria-label="Grid view">▦</button><button class="view-toggle" data-view="list" aria-label="List view">☷</button></div></div>
       <div class="filters" id="filters"></div>
       <div class="result-line"><span id="resultCount"></span><button id="clearFilters" class="clear-button">Clear filters</button></div>
+            <noscript>
+        <div class="noscript-catalog" style="padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; margin-bottom: 24px;">
+          <h2>Complete Medical Device Index (100 Guides across 15 Health Areas)</h2>
+          <p>MedAtlas is an educational directory. Browse devices below or enable JavaScript for interactive search, filters, side-by-side product comparisons, and detailed guides.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 18px;">
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Diabetes &amp; endocrine</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=glucometer" style="color: #183d5c; text-decoration: none;">Blood glucose meter</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Checks glucose in a small blood sample to support day-to-day diabetes monitoring.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Diabetes &amp; endocrine</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=cgm" style="color: #183d5c; text-decoration: none;">Continuous glucose monitor</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A small wearable sensor tracks glucose trends throughout the day and night.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=bp-monitor" style="color: #183d5c; text-decoration: none;">Blood pressure monitor</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures blood pressure using an inflatable cuff, usually on the upper arm or wrist.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=pulse-ox" style="color: #183d5c; text-decoration: none;">Pulse oximeter</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Estimates blood oxygen saturation and pulse through a fingertip sensor.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=cpap" style="color: #183d5c; text-decoration: none;">CPAP / PAP device</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Delivers prescribed air pressure through a mask to help keep the airway open during sleep.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Self-care &amp; monitoring</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=thermometer" style="color: #183d5c; text-decoration: none;">Digital thermometer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures body temperature using an electronic sensor at an approved site.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=stethoscope" style="color: #183d5c; text-decoration: none;">Stethoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Helps clinicians listen to sounds from the heart, lungs, and other body systems.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ecg" style="color: #183d5c; text-decoration: none;">Electrocardiograph (ECG)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Records the heart’s electrical activity through electrodes placed on the skin.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=holter" style="color: #183d5c; text-decoration: none;">Holter / ambulatory ECG monitor</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Records heart rhythm over an extended period while a person goes about daily activities.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=pacemaker" style="color: #183d5c; text-decoration: none;">Implantable pacemaker</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">An implanted system that monitors heart rhythm and provides electrical pacing when needed.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=aed" style="color: #183d5c; text-decoration: none;">Automated external defibrillator</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Guides a responder through checking for a shockable rhythm and delivering a shock if advised.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Diabetes &amp; endocrine</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=insulin-pump" style="color: #183d5c; text-decoration: none;">Insulin pump</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A wearable or implantable pump delivers programmed insulin under a prescribed care plan.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=inhaler-spacer" style="color: #183d5c; text-decoration: none;">Metered-dose inhaler + spacer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A handheld inhaler releases a measured medicine dose; a spacer can make coordination easier.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=nebulizer" style="color: #183d5c; text-decoration: none;">Nebulizer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Turns a compatible liquid medicine into an inhalable mist using a compressor or mesh.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=hearing-aid" style="color: #183d5c; text-decoration: none;">Hearing aid</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A wearable electronic device that amplifies and processes sound for an individual.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Rehabilitation &amp; assistive</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=wheelchair" style="color: #183d5c; text-decoration: none;">Manual wheelchair</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides seated mobility with configuration matched to a person’s posture and daily needs.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Rehabilitation &amp; assistive</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=prosthesis" style="color: #183d5c; text-decoration: none;">Limb prosthesis</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">An externally worn device that replaces part or all of a missing limb.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=knee-implant" style="color: #183d5c; text-decoration: none;">Knee replacement implant</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A surgically implanted system that replaces damaged joint surfaces in selected cases.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Kidney &amp; urinary</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dialysis" style="color: #183d5c; text-decoration: none;">Hemodialysis system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Filters waste and extra fluid from blood through a dialyzer in a supervised treatment system.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Kidney &amp; urinary</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=urinary-catheter" style="color: #183d5c; text-decoration: none;">Urinary catheter</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A flexible tube used to drain urine from the bladder when clinically indicated.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Digestive &amp; liver</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=endoscope" style="color: #183d5c; text-decoration: none;">Flexible endoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A camera-equipped flexible instrument lets clinicians examine internal passages and organs.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=syringe" style="color: #183d5c; text-decoration: none;">Syringe &amp; needle</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A graduated barrel and plunger draw up or deliver measured fluid through a compatible tip or needle.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=iv-pump" style="color: #183d5c; text-decoration: none;">Infusion pump</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Controls the rate and volume of fluid or medicine delivered through an infusion line.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=xray" style="color: #183d5c; text-decoration: none;">X-ray imaging system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses a controlled X-ray beam and detector to create images of internal structures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ultrasound" style="color: #183d5c; text-decoration: none;">Ultrasound system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses high-frequency sound waves to produce real-time images without ionizing radiation.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Neurology &amp; mental health</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=mri" style="color: #183d5c; text-decoration: none;">MRI scanner</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses a strong magnetic field and radio waves to create detailed images of body tissues.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Neurology &amp; mental health</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=neurostim" style="color: #183d5c; text-decoration: none;">Deep brain stimulation system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">An implanted system delivers electrical stimulation to selected brain targets for specific movement disorders.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=wound-dressing" style="color: #183d5c; text-decoration: none;">Advanced wound dressing</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A broad family of dressings designed to manage moisture, protect tissue, or support wound care.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=pregnancy-test" style="color: #183d5c; text-decoration: none;">Home pregnancy test</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Detects human chorionic gonadotropin (hCG) in urine as an aid to pregnancy testing.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ivd-analyzer" style="color: #183d5c; text-decoration: none;">Clinical laboratory analyzer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Automates measurements on blood, urine, or other samples in a clinical laboratory.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Digestive &amp; liver</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=colonoscope" style="color: #183d5c; text-decoration: none;">Colonoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A flexible camera instrument used by clinicians to examine the colon and rectum.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Kidney &amp; urinary</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=hemodialysis-access" style="color: #183d5c; text-decoration: none;">Vascular access for dialysis</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A fistula, graft, or catheter provides access to blood for hemodialysis treatment.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=surgical-robot" style="color: #183d5c; text-decoration: none;">Robotic-assisted surgical system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A surgeon-controlled platform translates hand movements into precise instrument motion.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Cancer care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=mammography" style="color: #183d5c; text-decoration: none;">Mammography system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A specialized X-ray system creates breast images for screening or diagnostic evaluation.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=bone-densitometer" style="color: #183d5c; text-decoration: none;">Bone densitometer (DXA)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures bone mineral density, commonly at the hip and spine, using low-dose X-rays.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=nebulizer-spacer" style="color: #183d5c; text-decoration: none;">Peak flow meter</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures how quickly a person can exhale, sometimes as part of an asthma action plan.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=neuro-wheel" style="color: #183d5c; text-decoration: none;">Cochlear implant system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">An implanted electronic system stimulates the auditory nerve for some people with severe hearing loss.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ct-scanner" style="color: #183d5c; text-decoration: none;">CT scanner</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses X-rays and computer reconstruction to create cross-sectional images.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dental-opg" style="color: #183d5c; text-decoration: none;">Panoramic dental X-ray (OPG)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Captures a panoramic image of the teeth, jaws, and surrounding structures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=echocardiography" style="color: #183d5c; text-decoration: none;">Echocardiography system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses ultrasound to create moving images of the heart.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Neurology &amp; mental health</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=eeg" style="color: #183d5c; text-decoration: none;">Electroencephalograph (EEG)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Records electrical activity from the brain through scalp electrodes.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Neurology &amp; mental health</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=emg-ncv" style="color: #183d5c; text-decoration: none;">EMG and nerve-conduction system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures electrical activity in muscles and signals along peripheral nerves.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=audiometer" style="color: #183d5c; text-decoration: none;">Audiometer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Presents controlled sounds to assess hearing thresholds.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=otoscope" style="color: #183d5c; text-decoration: none;">Otoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides magnified illumination to examine the outer ear and eardrum.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ophthalmoscope" style="color: #183d5c; text-decoration: none;">Ophthalmoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Illuminates and magnifies internal structures of the eye.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=fetal-doppler" style="color: #183d5c; text-decoration: none;">Fetal Doppler monitor</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses ultrasound Doppler to detect fetal heart activity during clinical assessment.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=fetal-monitor" style="color: #183d5c; text-decoration: none;">Fetal and maternal monitor (CTG)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Records fetal heart rate and uterine activity during selected maternity care.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=spirometer" style="color: #183d5c; text-decoration: none;">Spirometer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures inhaled and exhaled airflow and volumes during lung-function testing.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=cardiac-stress-test" style="color: #183d5c; text-decoration: none;">Cardiac stress-test system (TMT)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Records ECG and related measurements during supervised exercise testing.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Kidney &amp; urinary</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=uroflowmeter" style="color: #183d5c; text-decoration: none;">Uroflowmetry system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures urine-flow rate and volume during a voiding test.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Self-care &amp; monitoring</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=body-composition-monitor" style="color: #183d5c; text-decoration: none;">Body-composition analyzer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Estimates body composition using a method such as bioelectrical impedance.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=colposcope" style="color: #183d5c; text-decoration: none;">Colposcope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Magnifies and illuminates the cervix and nearby tissue for examination.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=anesthesia-workstation" style="color: #183d5c; text-decoration: none;">Anesthesia workstation</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Combines anesthesia gas delivery, breathing circuits, and ventilation controls.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=ventilator" style="color: #183d5c; text-decoration: none;">Mechanical ventilator</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Supports or controls breathing for patients who need assisted ventilation.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=oxygen-concentrator" style="color: #183d5c; text-decoration: none;">Oxygen concentrator</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Separates oxygen from room air to provide a concentrated oxygen supply.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=suction-machine" style="color: #183d5c; text-decoration: none;">Medical suction unit</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Creates controlled negative pressure to remove fluids from a clinical field or airway.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=electrosurgical-unit" style="color: #183d5c; text-decoration: none;">Electrosurgical unit (cautery)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses high-frequency electrical energy for cutting or coagulation during procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=syringe-pump" style="color: #183d5c; text-decoration: none;">Syringe infusion pump</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Delivers fluid from a syringe at a controlled rate.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=heart-lung-machine" style="color: #183d5c; text-decoration: none;">Heart-lung machine</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Temporarily supports circulation and gas exchange during selected heart operations.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=iabp" style="color: #183d5c; text-decoration: none;">Intra-aortic balloon pump (IABP)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides temporary mechanical circulatory support in selected cardiac situations.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Breathing &amp; sleep</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=laryngoscope" style="color: #183d5c; text-decoration: none;">Laryngoscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides a view of the larynx during airway examination or intubation.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=operating-microscope" style="color: #183d5c; text-decoration: none;">Operating microscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides magnified, illuminated views during delicate surgical procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=surgical-light" style="color: #183d5c; text-decoration: none;">Operating-theatre light</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides adjustable, shadow-reduced illumination over the surgical field.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Digestive &amp; liver</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=laparoscopic-system" style="color: #183d5c; text-decoration: none;">Laparoscopic imaging system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Displays images from a laparoscope during minimally invasive surgery.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=autoclave" style="color: #183d5c; text-decoration: none;">Steam sterilizer (autoclave)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses controlled steam cycles to sterilize compatible reusable instruments.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=centrifuge" style="color: #183d5c; text-decoration: none;">Laboratory centrifuge</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Separates sample components by spinning tubes at controlled speed.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=hematology-analyzer" style="color: #183d5c; text-decoration: none;">Hematology analyzer (cell counter)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Counts and classifies blood cells in a laboratory sample.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=microtome" style="color: #183d5c; text-decoration: none;">Microtome</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Cuts thin tissue sections for microscopic examination.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=radiant-warmer" style="color: #183d5c; text-decoration: none;">Radiant infant warmer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides controlled radiant heat to help maintain an infant’s temperature in clinical care.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=neonatal-incubator" style="color: #183d5c; text-decoration: none;">Neonatal incubator</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Creates a controlled environment for the care of selected newborns.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=neonatal-phototherapy" style="color: #183d5c; text-decoration: none;">Neonatal phototherapy unit</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides measured light exposure used in clinical management of neonatal jaundice.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=tens-unit" style="color: #183d5c; text-decoration: none;">TENS unit</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Delivers low-voltage electrical pulses through skin electrodes for pain-management programs.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=therapeutic-ultrasound" style="color: #183d5c; text-decoration: none;">Therapeutic ultrasound unit</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Delivers therapeutic ultrasound energy through an applicator used by a clinician.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=diathermy-unit" style="color: #183d5c; text-decoration: none;">Physiotherapy diathermy unit</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Delivers therapeutic electromagnetic energy in supervised physiotherapy.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=traction-system" style="color: #183d5c; text-decoration: none;">Traction system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Applies controlled pulling force as part of selected musculoskeletal care plans.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=pneumatic-compression" style="color: #183d5c; text-decoration: none;">Intermittent pneumatic compression device</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Inflates and deflates sleeves around a limb according to a programmed cycle.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Rehabilitation &amp; assistive</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=patient-lift" style="color: #183d5c; text-decoration: none;">Patient lift / hoist</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Supports assisted transfers between a bed, chair, or other surface.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Rehabilitation &amp; assistive</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=walker" style="color: #183d5c; text-decoration: none;">Walking frame / walker</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides a stable handhold to support walking and balance.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=hospital-bed" style="color: #183d5c; text-decoration: none;">Adjustable hospital bed</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Adjusts patient position to support care, comfort, and transfers.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=stretcher" style="color: #183d5c; text-decoration: none;">Patient transport stretcher</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Supports movement of a patient between care areas.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dental-chair" style="color: #183d5c; text-decoration: none;">Dental treatment chair</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Positions a patient for dental examinations and procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dental-handpiece" style="color: #183d5c; text-decoration: none;">Dental handpiece / drill</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Rotates a bur or tool for specific dental procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dental-implant" style="color: #183d5c; text-decoration: none;">Dental implant system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides an implanted support for a dental restoration in selected cases.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=prosthetic-heart-valve" style="color: #183d5c; text-decoration: none;">Prosthetic heart valve</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Replaces or supports a diseased heart valve through an implanted prosthesis.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=vascular-stent" style="color: #183d5c; text-decoration: none;">Vascular stent</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A small expandable scaffold used to support a selected blood vessel.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=angioplasty-balloon" style="color: #183d5c; text-decoration: none;">Angioplasty balloon catheter</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">A catheter-mounted balloon temporarily expands a selected narrowed vessel segment.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Children &amp; maternity</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=breast-pump" style="color: #183d5c; text-decoration: none;">Breast pump</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Expresses breast milk using manual or powered suction.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Eyes, ears &amp; dental</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=slit-lamp" style="color: #183d5c; text-decoration: none;">Slit-lamp biomicroscope</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses a focused slit of light and magnification to examine the eye.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=medical-gas-system" style="color: #183d5c; text-decoration: none;">Central medical-gas supply system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Supplies medical gases through a facility distribution network.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=blood-bank-refrigerator" style="color: #183d5c; text-decoration: none;">Blood-bank refrigerator</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Maintains controlled storage conditions for blood components.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=heater-cooler" style="color: #183d5c; text-decoration: none;">Cardiopulmonary heater-cooler system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Manages temperature of fluids used in selected cardiopulmonary procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=cathlab-system" style="color: #183d5c; text-decoration: none;">Cardiac catheterization imaging system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Uses fluoroscopic X-ray imaging to guide catheter-based cardiovascular procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=surgical-table" style="color: #183d5c; text-decoration: none;">Operating table</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Positions and supports a patient during surgery.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Surgery &amp; wound care</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=c-arm" style="color: #183d5c; text-decoration: none;">Mobile C-arm imaging system</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides real-time X-ray images during selected procedures.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Kidney &amp; urinary</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=dialyzer" style="color: #183d5c; text-decoration: none;">Hemodialyzer (dialysis filter)</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Filters waste and excess fluid from blood during hemodialysis.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=blood-gas-analyzer" style="color: #183d5c; text-decoration: none;">Blood-gas analyzer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures selected gases and related analytes in a blood sample.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Infection &amp; testing</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=electrolyte-analyzer" style="color: #183d5c; text-decoration: none;">Electrolyte analyzer</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Measures selected electrolytes in blood or other validated sample types.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Heart &amp; circulation</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=patient-monitor" style="color: #183d5c; text-decoration: none;">Multiparameter bedside monitor</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Displays selected vital signs such as ECG, oxygen saturation, blood pressure, and temperature.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Bones, joints &amp; mobility</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=orthosis-brace" style="color: #183d5c; text-decoration: none;">Orthosis and support brace</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Supports or limits movement at a body region as part of an individualized care plan.</p>
+            </article>
+            <article style="background: #fff; padding: 16px; border-radius: 10px; border: 1px solid #e2e8f0;">
+              <span style="font-size: 11px; color: #286da4; font-weight: 700; text-transform: uppercase;">Hospital &amp; pharmacy</span>
+              <h3 style="margin: 6px 0 8px; font-size: 16px;"><a href="device-library.html?device=exam-couch" style="color: #183d5c; text-decoration: none;">Patient examination couch</a></h3>
+              <p style="font-size: 13px; color: #64748b; line-height: 1.5; margin: 0;">Provides a stable surface for clinical examination and selected procedures.</p>
+            </article>
+          </div>
+        </div>
+      </noscript>
+
+
       <div class="device-grid" id="deviceGrid"></div>
       <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>No devices found</h3><p>Try a broader term or choose another health area.</p><button id="resetSearch">Show all devices</button></div>
     </section>
@@ -47,7 +632,8 @@
     <div class="image-viewer-stage"><img id="imageViewerImg" alt="" /></div>
     <div class="image-viewer-caption"><div><strong id="imageViewerCaption"></strong><a id="imageViewerSource" href="#" target="_blank" rel="noreferrer">View image source ↗</a></div><div class="zoom-controls"><button id="zoomOut" type="button" aria-label="Zoom out">−</button><span id="zoomValue">100%</span><button id="zoomIn" type="button" aria-label="Zoom in">+</button><button id="zoomReset" type="button">Reset</button></div></div>
   </div>
-  <script src="app.js"></script>
-  <script src="theme.js"></script>
+  <script src="app.js" defer></script>
+  <script src="theme.js" defer></script>
 </body>
 </html>
+

@@ -4,14 +4,142 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#286da4" />
-  <meta name="description" content="Explore medical devices by health area, what they do, and how they are used." />
-  <title>MedAtlas — Find your way through medical devices</title>
+  <title>MedAtlas — Medical Devices Directory &amp; Plain-Language Health Guides</title>
+  <meta name="description" content="Explore 100+ medical devices across 15 health areas. Understand what medical devices do, how they are used in care, and compare brand models with plain-language educational guides." />
+  <meta name="keywords" content="medical devices, health technology, medical equipment directory, glucose meter, blood pressure monitor, CPAP, pulse oximeter, diagnostic devices, medical guide" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://medatlas.health/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://medatlas.health/" />
+  <meta property="og:site_name" content="MedAtlas" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="MedAtlas — Medical Devices Directory &amp; Plain-Language Health Guides" />
+  <meta property="og:description" content="A clearer, educational way to explore medical devices across 15 health areas. Find the right device for your health." />
+  <meta property="og:image" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+  <meta property="og:image:secure_url" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+  <meta property="og:image:width" content="1731" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:image:alt" content="MedAtlas medical device directory illustration showing various healthcare technologies" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://medatlas.health/" />
+  <meta name="twitter:title" content="MedAtlas — Medical Devices Directory &amp; Plain-Language Health Guides" />
+  <meta name="twitter:description" content="A clearer, educational way to explore medical devices across 15 health areas. Find the right device for your health." />
+  <meta name="twitter:image" content="https://medatlas.health/assets/medatlas-doctor-hero.png" />
+
+  <!-- Favicon & Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/medatlas-favicon.svg" />
+
+  <!-- Preconnect & Non-blocking Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" /></noscript>
+
   <link rel="stylesheet" href="styles.css" />
   <script>try{if(localStorage.getItem('medatlas-theme')==='night')document.documentElement.dataset.theme='night'}catch(e){}</script>
+
+  <!-- Schema.org JSON-LD Knowledge Graph for Search Engines & AI Models -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://medatlas.health/#website",
+        "url": "https://medatlas.health/",
+        "name": "MedAtlas",
+        "description": "Educational directory for exploring medical devices by health area, purpose, and general use.",
+        "publisher": { "@id": "https://medatlas.health/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://medatlas.health/device-library.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://medatlas.health/#organization",
+        "name": "MedAtlas",
+        "url": "https://medatlas.health/",
+        "logo": "https://medatlas.health/assets/medatlas-favicon.svg",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://medatlas.health/#founder",
+          "name": "Ankush Kumar",
+          "jobTitle": "Founder & Developer",
+          "worksFor": { "@id": "https://medatlas.health/#organization" },
+          "description": "Founder and developer of MedAtlas with over 4 years of experience in the pharmaceutical and medical-device industry. Holds an MBA in Pharmaceutical Management and a B.Pharm.",
+          "image": "https://medatlas.health/assets/founder-ankush-kumar.png",
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "IIHMR University"
+          },
+          "knowsAbout": ["Medical Devices", "Pharmaceutical Management", "Healthcare Information Systems"]
+        },
+        "knowsAbout": [
+          "Medical Devices",
+          "Health Technology",
+          "Clinical Diagnostic Equipment",
+          "Therapeutic Medical Devices"
+        ],
+        "publishingPrinciples": "https://medatlas.health/#education-note"
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://medatlas.health/#webpage",
+        "url": "https://medatlas.health/",
+        "name": "MedAtlas — Medical Devices Directory & Plain-Language Health Guides",
+        "isPartOf": { "@id": "https://medatlas.health/#website" },
+        "about": { "@id": "https://medatlas.health/#organization" },
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "educationalUse": "Patient Education",
+        "citation": [
+          "https://www.who.int/health-topics/medical-devices",
+          "https://www.fda.gov/medical-devices/classify-your-medical-device/product-code-classification-database",
+          "https://health.ec.europa.eu/medical-devices-topics-interest/european-medical-devices-nomenclature-emdn_en"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://medatlas.health/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is MedAtlas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedAtlas is an educational directory designed to make medical-device knowledge easier to explore across 15 health areas and 100 device guides, written in clear, plain language."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is MedAtlas a diagnostic tool or substitute for medical advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. MedAtlas is purely for general education. It is not a diagnostic tool, product endorsement, or substitute for advice from a qualified healthcare professional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does the medical device information in MedAtlas come from?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MedAtlas is built using public nomenclature and clinical reference materials from the World Health Organization (WHO), the U.S. FDA Product Code Classification Database, and the European Medical Device Nomenclature (EMDN)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="announcement"><span class="announcement-pulse"></span> A clearer way to explore medical devices <a href="device-library.html">Explore the library <span>→</span></a></div>
@@ -32,7 +160,10 @@
         <div class="hero-actions"><a class="primary-link" href="#areas">Browse health areas <span>→</span></a><a class="secondary-link" href="device-library.html">View all devices <span>↗</span></a></div>
       </div>
       <div class="hero-art hero-doctor-art">
-        <img class="doctor-hero-image" src="assets/medatlas-doctor-hero.png" alt="A doctor presenting a range of medical devices, including an MRI scanner, wheelchair, ultrasound system, glucose meter, and inhaler" fetchpriority="high" />
+        <picture>
+          <source srcset="assets/medatlas-doctor-hero.webp" type="image/webp" />
+          <img class="doctor-hero-image" src="assets/medatlas-doctor-hero.png" alt="A doctor presenting a range of medical devices, including an MRI scanner, wheelchair, ultrasound system, glucose meter, and inhaler" width="1731" height="909" fetchpriority="high" decoding="async" />
+        </picture>
       </div>
       <div class="hero-note"><span>✳</span> Get familiar with the options. Bring questions to your care team.</div>
     </section>
@@ -59,7 +190,7 @@
 
   <footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 44"><path d="M20 2.5 36 8v12.4c0 10.1-6.2 17-16 21.1C10.2 37.4 4 30.5 4 20.4V8L20 2.5Z"/><path d="M20 12v16M12 20h16"/></svg></span><span class="brand-name">Med<span class="brand-light">Atlas</span><small>Find the right device for your health</small></span></a><span>Medical device knowledge, mapped.</span><span>© 2026 MedAtlas · Educational use</span></footer>
   <div class="modal-backdrop" id="modalBackdrop" hidden><section class="device-modal" id="deviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></section></div>
-  <script src="app.js"></script>
-  <script src="theme.js"></script>
+  <script src="app.js" defer></script>
+  <script src="theme.js" defer></script>
 </body>
 </html>

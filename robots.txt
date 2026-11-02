@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Dedicated directives for AI Crawlers & LLM Indexers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemaps & Machine-Readable AI Knowledge
+Sitemap: https://medatlas.health/sitemap.xml
+LLM-Index: https://medatlas.health/llms.txt

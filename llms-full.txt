@@ -1,0 +1,610 @@
+﻿# MedAtlas Knowledge Base (Complete Directory)
+> Comprehensive plain-language medical device reference across 15 health areas and 100 device guides.
+
+Founder: Ankush Kumar (MBA Pharmaceutical Management, B.Pharm; 4+ years pharmaceutical and medical-device industry experience).
+Website: https://medatlas.health
+Standards Referenced: WHO Medical Devices, FDA Product Classification Database, European Commission EMDN.
+
+---
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+### 
+- **Device ID**: 
+- **Health Area**: 
+- **Summary**: 
+- **Guide URL**: https://medatlas.health/device-library.html?device=
+
+
